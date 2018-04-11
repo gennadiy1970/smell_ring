@@ -1,0 +1,142 @@
+:root {
+  --ring-size: 800px;
+  --step-grad: 2deg;
+  --step-shiftX: 20px;
+  --step-card: 120px;
+}
+/*
+.wrapper {
+  display: flex; 
+  flex-wrap: wrap; 
+ }
+
+.container_list {
+  min-width: 700px;
+} 
+*/
+
+.container_ring {
+  min-width: var(--ring-size);
+  min-height: var(--ring-size);
+  position: relative;
+  float: left;
+  shape-outside: circle(50%);
+}
+
+.container_list__header {
+  text-align: center;
+  margin-bottom: 76px;
+  /* font-family: 'Parisienne', cursive; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  color: darkblue;
+  text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+}
+
+
+.parfum {
+  box-shadow: 3px 3px 5px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+h3,
+h4,
+caption {
+  text-align: center;
+  text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+table {
+  max-width: 80%;
+  margin: auto;
+}
+
+th,
+td {
+  max-width: 100px;
+}
+
+.list__item {
+  display: inline-block;
+  background: lavender;
+  padding: 2px 15px;
+  color: #252;
+  min-width: 600px;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 14px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 10px;
+  box-shadow: 2px 3px 6px 2px hsla(0, 0%, 0%, 0.4);
+}
+
+.list__item--header {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.list__brand,
+.list__name {
+  width: 50%;
+}
+
+.list__brand {
+  font-size: 24px;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.list__name {
+  font-size: 22px;
+  font-family: 'Merienda One', cursive;
+}
+
+.list__item:hover {
+  box-shadow: 1px 1px 1px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+.list__item:hover .list__brand,
+.list__item:hover .list__name {
+  cursor: pointer;
+  text-shadow: 2px 1px 5px hsla(0, 100%, 100%, 0.2);
+}
+
+.list__about--hide {
+  position: fixed;
+  width: 300px;
+  padding: 15px 10px;
+  border-radius: 9px;
+  min-height: 600px;
+  background: #fff;
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+    box-shadow: 2px 2px 5px 2px hsla(0, 0%, 0%, 0.2);
+    z-index: 100;
+    display: none;
+}
+
+.list__about--hide>ul {
+  width: 100%;
+  padding-right: 5px;
+}
+.list__about--hide>ul>li {
+  width: 100%;
+}
+
+.list__item:hover>.list__about--hide {
+  display: block;
+}
+
+.list__about--hide:nth-of-type(2) {
+    top: 50px;
+    left: 400px;
+}
