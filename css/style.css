@@ -4,6 +4,10 @@
   --step-shiftX: 20px;
   --step-card: 120px;
 }
+
+body {
+  background: url(../img/flower_blossom_branch_petals_95054_1920x1200.jpg);
+}
 /*
 .wrapper {
   display: flex; 
