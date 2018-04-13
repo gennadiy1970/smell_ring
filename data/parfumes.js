@@ -74,16 +74,22 @@ const parfumes = {
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: "w"
+      sex: "женские"
     },
     {
       brand: "Lanvin",
       name: "Eclat d`Arpege",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: "w"
+      type: ["цветочный", "зеленый"],
+      top_note: ["сирень (зеленая)", "петитгрейн"],
+      middle_note: [
+        "персиковый цвет",
+        "вистерия",
+        "пион (красный)",
+        "чай зеленый",
+        "османтус китайский"
+      ],
+      base_note: ["амбра", "мускус", "кедр (белый)"],
+      sex: "женские"
     },
     {
       brand: "La Perla",
@@ -92,7 +98,7 @@ const parfumes = {
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: "w"
+      sex: "женские"
     },
     {
       brand: "DKNY",
@@ -101,7 +107,7 @@ const parfumes = {
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: "w"
+      sex: "женские"
     },
     {
       brand: "Versace",
@@ -110,7 +116,7 @@ const parfumes = {
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: "w"
+      sex: "женские"
     }
   ],
   "3": [
@@ -330,7 +336,7 @@ const parfumes = {
     {
       brand: "LR",
       name: "Sensual Grace",
-      type: [],
+      type: ["цветочный"],
       top_note: [],
       middle_note: [],
       base_note: [],
@@ -475,128 +481,162 @@ const parfumes = {
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: ""
+      sex: "женские"
     },
     {
       brand: "Givenchy",
       name: "Ange ou Demon",
-      type: [],
+      type: ["восточный", "цветочный"],
       top_note: [],
       middle_note: [],
       base_note: [],
-      sex: ""
+      sex: "женские"
     },
     {
       brand: "Cerruti",
-      name: "",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      name: "1881",
+      type: ["цветочный"],
+      top_note: [
+        "бергамот",
+        "жасмин",
+        "ирис",
+        "ландыш",
+        "мимоза",
+        "роза",
+        "фиалка",
+        "фрезия белая"
+      ],
+      middle_note: [
+        "апельсиновый цвет",
+        "гальбанум",
+        "герань",
+        "жасмин",
+        "кориандр",
+        "нарцисс",
+        "тубероза",
+        "ирис",
+        "розовое дерево",
+        "ромашка"
+      ],
+      base_note: ["амбра", "ваниль", "мускус", "сандал", "кедр (белый)"],
+      sex: "женские"
     },
     {
       brand: "Blumarine",
       name: "Bellissima",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["древесный", "цветочный", "мускусный"],
+      top_note: ["апельсин", "грейпфрут", "имбирь", "вода"],
+      middle_note: ["пассифлора", "пион"],
+      base_note: ["кашмирское дерево", "ваниль", "сандал", "мускус"],
+      sex: "женские"
     },
     {
       brand: "Chanel",
       name: "Coco Mademoiselle",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["восточный", "цветочный"],
+      top_note: ["апельсиновый цвет", "апельсин", "мандарин", "бергамот"],
+      middle_note: ["жасмин", "иланг", "роза турецкая", "мимоза"],
+      base_note: [
+        "ветивер",
+        "ваниль",
+        "бобы тонка",
+        "мускус белый",
+        "пачули",
+        "опопонакс"
+      ],
+      sex: "женские"
     },
     {
       brand: "Clinique",
       name: "Happy",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["цветочный", "фруктовый"],
+      top_note: ["яблоко (зеленое)", "бергамот", "слива", "горный воздух"],
+      middle_note: ["ландыш", "роза", "орхидея", "фрезия белая"],
+      base_note: ["амбра", "мускус"],
+      sex: "женские"
     }
   ],
   "10": [
     {
       brand: "LR",
       name: "Lovingly by Bruce Willis",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["мускусный", "древесный", "цветочный"],
+      top_note: ["цитрусы"],
+      middle_note: ["белые цветы"],
+      base_note: ["сандал", "мускус"],
+      sex: "женские"
     },
     {
       brand: "Lanvin",
       name: "Marry Me",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["цветочный", "фруктовый"],
+      top_note: ["персик", "фрезия белая", "апельсин горький"],
+      middle_note: ["роза", "магнолия", "жасмин"],
+      base_note: ["амбра", "кедр (вирджиния)", "мускус"],
+      sex: "женские"
     },
     {
       brand: "Calvin Klein",
       name: "Beauty",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["цветочный"],
+      top_note: ["амбретта"],
+      middle_note: ["жасмин"],
+      base_note: ["кедр (вирджиния)"],
+      sex: "женские"
     }
   ],
   "11": [
     {
       brand: "LR",
       name: "Bruce Willis",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["древесный", "фужерный"],
+      top_note: ["апельсин", "грейпфрут", "перец"],
+      middle_note: ["герань", "ветивер"],
+      base_note: ["кедр (вирджиния)", "сандал"],
+      sex: "мужские"
     },
     {
-      brand: "Angle Schlesser",
+      brand: "Angel Schlesser",
       name: "Essential for Men",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["древесный", "фужерный"],
+      top_note: ["яблоко (зеленое)", "бергамот"],
+      middle_note: ["корица", "лист фиалки", "кофе"],
+      base_note: ["кедр (белый)", "мускус", "кожа", "бобы тонка"],
+      sex: "мужские"
     },
     {
       brand: "DSQUARED²",
-      name: "Wood",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      name: "He Wood",
+      type: ["древесный", "фужерный"],
+      top_note: ["фиалка", "лист фиалки"],
+      middle_note: ["ветивер", "кедр (белый)"],
+      base_note: ["ель", "амбра", "мускус"],
+      sex: "мужские"
     },
     {
       brand: "D&G",
       name: "The One for Men",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      type: ["древесный", "пряный"],
+      top_note: ["кориандр", "базилик", "грейпфрут"],
+      middle_note: ["кардамон", "имбирь", "флердоранж"],
+      base_note: ["амбра", "кедр (белый)", "табак"],
+      sex: "мужские"
     },
     {
       brand: "Montblanc",
-      name: "",
-      type: [],
-      top_note: [],
-      middle_note: [],
-      base_note: [],
-      sex: ""
+      name: "Legend",
+      type: ["фужерный"],
+      top_note: ["бергамот", "лаванда", "вербена лимонная", "ананас"],
+      middle_note: [
+        "мох (дубовый)",
+        "кумарин",
+        "герань",
+        "роза",
+        "сухофрукты",
+        "яблоко (красное)"
+      ],
+      base_note: ["сандал", "бобы тонка"],
+      sex: "мужские"
     }
   ],
   "12": [
@@ -607,7 +647,7 @@ const parfumes = {
       top_note: ["грейпфрут", "перец", "бергамот"],
       middle_note: ["гуаяк", "кардамон", "герань"],
       base_note: ["ветивер", "кедр (белый)", "амбра", "шоколад"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Giorgio Armani",
@@ -616,7 +656,7 @@ const parfumes = {
       top_note: ["бергамот", "лимон"],
       middle_note: ["анис (звездчатый)", "цветок оливкового дерева", "гуаяк"],
       base_note: ["кожа", "табак", "бобы тонка"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Calvin Klein",
@@ -625,7 +665,7 @@ const parfumes = {
       top_note: ["имбирь", "перец"],
       middle_note: ["шалфей", "кедр (белый)", "базилик (черный)"],
       base_note: ["амбра", "пачули", "замша", "махагони (бразильский)"],
-      sex: "m"
+      sex: "мужские"
     }
   ],
   "13": [
@@ -636,7 +676,7 @@ const parfumes = {
       top_note: ["анис", "имбирь", "ананас"],
       middle_note: ["перец", "мускатный орех", "кардамон"],
       base_note: ["ветивер", "палисандр", "мускус"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Christian Dior",
@@ -645,7 +685,7 @@ const parfumes = {
       top_note: ["грейпфрут", "амальфитанский лимон", "элеми", "бергамот"],
       middle_note: ["ветивер", "имбирь", "кедр (вирджиния)"],
       base_note: ["сандал", "розмарин", "лаванда"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Lanvin",
@@ -654,7 +694,7 @@ const parfumes = {
       top_note: ["лаванда", "мандарин", "нероли", "бергамот"],
       middle_note: ["перец", "мята", "шалфей", "кардамон"],
       base_note: ["сандал", "амбра", "мускус", "ваниль"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Davidoff",
@@ -663,7 +703,7 @@ const parfumes = {
       top_note: ["лимон", "бергамот"],
       middle_note: ["гальбанум", "мускатный орех", "шалфей"],
       base_note: ["мох (дубовый)", "кедр (белый)"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Guerlain",
@@ -672,7 +712,7 @@ const parfumes = {
       top_note: ["лайм", "мята", "бергамот"],
       middle_note: ["ветивер", "герань", "мохито"],
       base_note: ["ром", "кедр (белый)"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Ermenegildo Zegna",
@@ -681,7 +721,7 @@ const parfumes = {
       top_note: ["бергамот (сицилия)", "розмарин"],
       middle_note: ["мускатный орех", "белый перец", "ирис"],
       base_note: ["мускус", "мох (дубовый)", "пачули", "кашмирское дерево"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Calvin Klein",
@@ -700,7 +740,7 @@ const parfumes = {
         "герань"
       ],
       base_note: ["розовое дерево", "ветивер", "мускус", "амбра", "сандал"],
-      sex: "m"
+      sex: "мужские"
     },
     {
       brand: "Davidoff",
@@ -717,7 +757,7 @@ const parfumes = {
       ],
       middle_note: ["сандал", "жасмин", "нероли", "герань"],
       base_note: ["мускус", "мох (дубовый)", "кедр (белый)", "амбра", "табак"],
-      sex: "m"
+      sex: "мужские"
     }
   ]
 };
