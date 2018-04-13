@@ -35,14 +35,26 @@ function drawChart() {
 
   const options = {
     title: "Fragrance",
-    // title: null,
     width: SIZE,
     height: SIZE,
+    backgroundColor: { fill: "transparent" },
+    titleTextStyle: {
+      color: "#FFE7E5",
+      fontName: "Parisienne",
+      fontSize: 72,
+      bold: true,
+      italic: true
+    },
     animation: {
       duration: 3000,
       easing: "in"
     },
     pieHole: 0.5,
+    pieSliceTextStyle: {
+      color: "snow",
+      fontSize: 11,
+      bold: true
+    },
     legend: "none",
     colors: [
       "#9a042f",
@@ -63,7 +75,18 @@ function drawChart() {
     pieSliceText: "label",
     pieStartAngle: angle.current,
     tooltip: {
-      isHtml: true
+      isHtml: true,
+      trigger: "focus",
+      textStyle: {
+        // color: "#FFE7E5",
+        color: "#885533",
+        fontName: "Ubuntu, Arial, Helvetica",
+        fontSize: 24,
+        bold: true,
+        italic: true
+      }
+
+      // ignoreBounds: true
     }
     // animation: { startup: true }
   };
@@ -87,15 +110,15 @@ function drawChart() {
   google.visualization.events.addListener(chart, "select", selectHandler);
 
   chart.draw(data, options);
-  Title_center();
+  // Title_center();
 }
 
-function Title_center() {
-  const title_chart = document.querySelector(
-    "#piechart_3d svg > g:nth-child(3) > text"
-  );
-  title_chart.setAttribute("dx", "158");
-  title_chart.setAttribute("dy", "285");
-  title_chart.style.fontSize = "36px";
-  title_chart.style.fill = "orangered";
-}
+// function Title_center() {
+//   const title_chart = document.querySelector(
+//     "#piechart_3d svg > g:nth-child(3) > text"
+//   );
+//   title_chart.setAttribute("dx", "158");
+//   title_chart.setAttribute("dy", "285");
+//   title_chart.style.fontSize = "36px";
+//   title_chart.style.fill = "orangered";
+// }

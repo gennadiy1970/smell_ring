@@ -8,35 +8,40 @@
 body {
   background: url(../img/flower_blossom_branch_petals_95054_1920x1200.jpg);
 }
-/*
-.wrapper {
-  display: flex; 
-  flex-wrap: wrap; 
- }
 
-.container_list {
-  min-width: 700px;
-} 
-*/
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container {
+  max-width: 800px;
+}
+
+div.google-visualization-tooltip {
+  background-color: hsla(0, 0%, 0%, 0.8) !important;
+  border-radius: 30px;
+}
 
 .container_ring {
   min-width: var(--ring-size);
   min-height: var(--ring-size);
   position: relative;
-  float: left;
+  /* float: left; */
   shape-outside: circle(50%);
 }
 
 .container_list__header {
   text-align: center;
   margin-bottom: 76px;
-  /* font-family: 'Parisienne', cursive; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Parisienne", cursive;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 42px;
-  color: darkblue;
+  color: #fff6f1;
   text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
-
 
 .parfum {
   box-shadow: 3px 3px 5px 1px hsla(0, 0%, 0%, 0.2);
@@ -61,13 +66,13 @@ td {
 
 .list__item {
   display: inline-block;
-  background: lavender;
+  background: hsla(0, 100%, 100%, 0.85);
   padding: 2px 15px;
   color: #252;
   min-width: 600px;
   height: 50px;
   position: relative;
-  z-index: 10;
+  /* z-index: -10; */
   margin-bottom: 14px;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 10px;
@@ -92,12 +97,12 @@ td {
 
 .list__brand {
   font-size: 24px;
-  font-family: 'Delius Unicase', cursive;
+  font-family: "Delius Unicase", cursive;
 }
 
 .list__name {
   font-size: 22px;
-  font-family: 'Merienda One', cursive;
+  font-family: "Merienda One", cursive;
 }
 
 .list__item:hover {
@@ -109,38 +114,83 @@ td {
   cursor: pointer;
   text-shadow: 2px 1px 5px hsla(0, 100%, 100%, 0.2);
 }
-
 .list__about--hide {
   position: fixed;
-  width: 300px;
+  /* width: 300px;
+  min-height: 600px; */
   padding: 15px 10px;
   border-radius: 9px;
-  min-height: 600px;
-  background: #fff;
-    font-family: Arial,
-    Helvetica,
-    sans-serif;
-    font-size: 16px;
-    color: darkblue;
-    text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
-    box-shadow: 2px 2px 5px 2px hsla(0, 0%, 0%, 0.2);
-    z-index: 100;
-    display: none;
+  color: darkblue;
+  background: hsla(0, 100%, 100%, 0.95);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 2px 2px 5px 2px hsla(0, 0%, 0%, 0.2);
+  z-index: 100;
+  /* top: -50px;  */
+  /* left: 300px; */
+  /* opacity: 0; */
 }
+@media screen and (min-width: 1620px) {
+  .list__about--hide > ul {
+    width: 100%;
+    padding-right: 5px;
+  }
+  .list__about--hide > ul > li {
+    width: 100%;
+    height: auto;
+  }
 
-.list__about--hide>ul {
-  width: 100%;
-  padding-right: 5px;
-}
-.list__about--hide>ul>li {
-  width: 100%;
-}
+  .list__item > .list__about--hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    top: -50px;
+    left: 350px;
+    font-size: 0;
+    transition-duration: 0.2s;
+    transition-property: top, left, width, height;
+    transition-timing-function: ease-in-out;
+  }
 
-.list__item:hover>.list__about--hide {
-  display: block;
-}
-
-.list__about--hide:nth-of-type(2) {
+  .list__item:hover > .list__about--hide {
+    transition-property: top, left, width, height;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
     top: 50px;
-    left: 400px;
+    left: 450px;
+    width: 300px;
+    font-size: 16px;
+    min-height: 750px;
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 800px) {
+  /* .list__item ,
+ .list__about--hide {
+    background: #fff;
+  } */
+  .list__item > .list__about--hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    top: -50px;
+    right: -50px;
+    font-size: 0;
+    transition-duration: 0.2s;
+    transition-property: top, left, width, height, font-size;
+    transition-timing-function: ease-in-out;
+  }
+
+  .list__item:hover > .list__about--hide {
+    transition-property: top, left, width, height;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    top: 50px;
+    right: 50px;
+    font-size: 16px;
+    width: 300px;
+    min-height: 750px;
+    overflow: visible;
+  }
 }

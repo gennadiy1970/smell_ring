@@ -1,7 +1,8 @@
 const elemList = document.querySelector(".list");
 
 function fillList(arr, parent) {
-  parent.innerHTML = arr.filter((elem, i) => i < 10)
+  parent.innerHTML = arr
+    .filter((elem, i) => i < 10)
     .map(
       elem => `
         <li class="list__item">
@@ -30,4 +31,3 @@ function fillList(arr, parent) {
     )
     .join("");
 }
-
