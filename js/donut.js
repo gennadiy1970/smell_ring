@@ -17,20 +17,20 @@ function drawChart() {
   data.addColumn("number", "Notes");
   data.addColumn({ type: "string", role: "tooltip" });
   data.addRows([
-    ["Oriental", PART, "Oriental, Resing"],
-    ["Woody Oriental", PART, "Sandalwood, Patchouli"],
-    ["Woods", PART, "Aromatic Woods, Vetiver"],
-    ["Mossy Woods", PART, "Oakmoss, Amber"],
-    ["Dry Woods", PART, "Dry Woods, Leather"],
-    ["Aromatic", PART, "Lavender, Aromatic Herbs"],
-    ["Citrus", PART, "Bergamot, Citrus Oils"],
-    ["Water", PART, "Marine, Aquatic Notes"],
-    ["Green", PART, "Galbanum, Green Notes"],
-    ["Fruity", PART, "Berries, Fruits"],
-    ["Floral", PART, "Fresh Cut, Flowers"],
-    ["Soft Floral", PART, "Aldehydes, Powdery Notes"],
-    ["Floral Oriental", PART, "Orange Blossom, Sweet Spices"],
-    ["Soft Oriental", PART, "Incense, Amber"]
+    ["☽", PART, "Восточные"],
+    ["☽🌲", PART, "Восточно-древесный: сандал, пачули"],
+    ["🌳", PART, "Древесные ароматы: ветивер"],
+    ["෴", PART, "Дубовый мох, янтарь"],
+    ["⭗", PART, "Сухая древесина, кожа"],
+    ["⚘", PART, "Лаванда, ароматические травы"],
+    ["🍋", PART, "Бергамот, цитрусовые масла"],
+    ["🚿", PART, "Морские, водные ноты"],
+    ["🌿", PART, "Зеленые ноты: гальбанум"],
+    ["🍐", PART, "Ягоды, фрукты"],
+    ["🌼", PART, "Цветы"],
+    ["🌸", PART, "Мягкий цветочный, пудра"],
+    ["🌶", PART, "Оранжевый цвет, сладкие специи"],
+    ["⌇⌇⌇", PART, "Благовония, янтарь"]
   ]);
 
   const options = {
@@ -52,12 +52,12 @@ function drawChart() {
     pieHole: 0.5,
     pieSliceTextStyle: {
       color: "snow",
-      fontSize: 11,
+      fontSize: 36,
       bold: true
     },
     legend: "none",
     colors: [
-      "#9a042f",
+      "#990000", // "#9a042f",
       "#b5560d",
       "#c08a39",
       "#44745c",
