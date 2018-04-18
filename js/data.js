@@ -7,7 +7,7 @@ function Parfume(arr) {
 }
 
 const colorsModel = {
-  Oriental: "#9a042f",
+  Oriental: "#ff0000",
   "Woody Oriental": "#b5560d",
   Woods: "#c08a39",
   "Mossy Woods": "#44745c",
